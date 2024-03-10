@@ -1,0 +1,203 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: rgb(33, 10, 116);
+    color:white;
+    font-family:'Poppins', sans-serif;
+}
+
+
+nav{
+    overflow:hidden;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(20, 11, 92);
+    top:0;
+    bottom: 0;
+    width:100%
+
+    
+}
+
+nav ul{
+    display:flex;
+    justify-content: center;
+    margin:20px;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 23px;
+    justify-content: center;
+}
+.left{
+    font-size: 2rem;
+}
+.right{
+    margin:30px;
+}
+div{
+    display: block;
+}
+.first{
+    display:flex;
+    justify-content: space-around;
+    margin: 80px 0;
+    align-items: center;
+    margin: 85px 0;
+}
+.first >div{
+    width: 30%;
+}
+.leftSection{
+    font-size: 3rem;
+    padding: 25px;
+}
+
+
+.leftSection .btn{
+    padding: 15px;
+    background: rgb(14, 19, 179);
+    color:white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size:20px;
+    cursor:pointer;
+}
+.btn .anchor{
+    color:white;
+    text-decoration: none;
+}
+.rightSection img{
+    width:80%;
+    
+    
+}
+.purple{
+    color:blueviolet;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white
+}
+nav ul li a:hover{
+    color:rgb(209, 56, 143);
+    font-size:1.01rem;
+    
+}
+
+  .header .nav-link{
+      font-family: 'Roboto Condensed', sans-serif;
+      color: white!important;
+  }
+  .contact span{
+    color:blueviolet;
+
+  }
+  .contact h1{
+      text-align: center;
+      font-size: 50px;
+      font-weight: bolder;
+      opacity: 0;
+      animation: slideRight 1s ease forwards;
+      animation-delay: .7s;
+      
+  }
+  
+  ul {
+      
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      padding: 0;     
+      max-width: 600px;
+    }
+  
+    
+    @media screen and (min-width: 600px) {
+        ul {
+            flex-direction: row;
+        }
+    }
+    
+    .header li {
+      position: relative;
+      padding: 30px;
+      white-space: nowrap;
+      width: fit-content;
+    }
+    
+    .header a {
+      display: inline-block;
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: .25em;
+      display: inline-block;
+      padding: 15px;
+      position: relative;
+      opacity: 0;
+      animation: slideTop .5s ease forwards;
+      animation-delay: calc(.2s * var(--i));
+    }
+    
+    .header a:hover::after {
+      width: 100%;
+      right: 0;
+    }
+    
+    .header a::after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 4px;
+      right: 0;
+      position: absolute;
+      background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
+      transition: width .5s ease 0s, right .5s ease 0s;
+      width: 0;
+    }
+    .info{
+      width: 35%;
+      
+      margin-left: 32%;    
+    }
+    .Information{
+      display: flex;
+      flex-direction: column;
+    }
+    .address,.phone,.email,.web{
+      display: flex;
+      flex-direction: row;
+      margin: 5px;
+      gap: 10px;
+    }
+  
+    @keyframes slideTop {
+      0%{
+          transform: translateY(100px);
+          opacity: 0;
+      }
+  
+      100%{
+          transform: translateY(0);
+          opacity: 1;
+      }
+  }@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+  
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }

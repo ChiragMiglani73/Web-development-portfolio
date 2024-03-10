@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: rgb(33, 10, 116);
+    color:white;
+    font-family:'Poppins', sans-serif;
+}
+
+
+nav{
+    overflow:hidden;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(20, 11, 92);
+    top:0;
+    bottom: 0;
+    width:100%
+
+    
+}
+
+nav ul{
+    display:flex;
+    justify-content: center;
+    margin:20px;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 23px;
+    justify-content: center;
+}
+.left{
+    font-size: 2rem;
+}
+.right{
+    margin:30px;
+}
+div{
+    display: block;
+}
+.first{
+    display:flex;
+    justify-content: space-around;
+    margin: 80px 0;
+    align-items: center;
+    margin: 85px 0;
+}
+.first >div{
+    width: 30%;
+}
+.leftSection{
+    font-size: 3rem;
+    padding: 25px;
+}
+
+
+.leftSection .btn{
+    padding: 15px;
+    background: rgb(14, 19, 179);
+    color:white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size:20px;
+    cursor:pointer;
+}
+.btn .anchor{
+    color:white;
+    text-decoration: none;
+}
+.rightSection img{
+    width:80%;
+    
+    
+}
+.purple{
+    color:blueviolet;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white
+}
+nav ul li a:hover{
+    color:rgb(209, 56, 143);
+    font-size:1.01rem;
+    
+}
+
+.About{
+    justify-content: center;
+}
+h2{
+    text-align: center;
+    padding:50px;
+}
+.About .heading span {
+    color:blueviolet;
+}
+.About .heading {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+   
+    
+  }
+.About .Information ul{
+    font-size: 1.5rem;
+}
+hr{
+    height:2px;
+    background-color: white;
+    border: 0;
+}
