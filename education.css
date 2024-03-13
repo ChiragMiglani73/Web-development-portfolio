@@ -10,6 +10,7 @@ body{
 
 
 nav{
+    padding-left: 25px;
     overflow:hidden;
     display:flex;
     justify-content: space-around;
@@ -94,124 +95,121 @@ nav ul li a:hover{
 }
 
 
-  .education {
-    color: white;
+.education {
+    background: #0d0879;
+    min-height: 80vh;
+  }
+h1{
+  text-align: center;
+  padding: 20px;
+}
+.education .heading span {
+  color:blueviolet;
+}
+.education .heading{
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+ 
+}
+  .education .qoute {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+  .education .box-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: auto;
-    padding: 5rem;
   }
-  .education .heading {
+  .education .box-container .box {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
     text-align: center;
-    font-size: 50px;
-    font-weight: bolder;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
-    animation-delay: .7s;
-    
-  }
-  .education .heading span {
-    color: blueviolet
-  }
-  .education .education-column {
-    flex: 1 1 40rem;
-  }
-  .education-column .education-box {
-    border-left: .2rem blueviolet;
-  }
-  .education-box .education-content {
     position: relative;
-    padding-left: 2rem;
-  }
-
-  .education-box .education-content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -1.1rem;
-    width: 2rem;
-    height: 2rem;
-    background:  blueviolet;
-    border-radius: 58%;
-  }
-  .education-content .content{
-    position: relative;
-    padding: 1.5rem;
-    border: .2rem solid blueviolet;
-    border-radius: .6rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
     overflow: hidden;
+    transition: 0.3s;
+    background: #9C27B0;
+    margin-bottom: 20px;
+
   }
-  .education-content .content::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: rgb(196, 1, 196);
-    z-index: -1;
-    transition: .5s;
-    opacity: .2;
-}
-.education-content .content:hover::before {
+  .education .box-container .box:hover {
+    transform: scale(1.03);
+    box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+  }
+  .education .box-container .box .image {
+    flex: 1 1 20rem;
     width: 100%;
-}
-  .education-content .content .year {
+  }
+  .education .box-container .box img {
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .education .box-container .box .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    flex-wrap: wrap;
+    flex: 1 1 70rem;
+  }
+  .education .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: #012970;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 1rem;
+  }
+  .education .box-container .box .content p {
     font-size: 1.5rem;
-    color: blueviolet;
-    padding-bottom: .5rem;
+    margin-left: 1rem;
+    text-align: left;
   }
-  .education-content .content .year i{
-    padding-right: .5rem;
-  }
-  .education-content .content h3 {
+  .education h4 {
     font-size: 2rem;
+    color: rgb(15, 5, 72);
+    text-align: left;
+    margin: 1rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
   }
   
-  /* making the page responsive */
-  @media (max-width: 425px) {
-    .education-content .content h3 {
-         font-size: 25px;
-     }
-   }
-   @media (max-width: 385px) {
-    .education-content .content h3 {
-         font-size: 20px;
-     }
-   }
-  .education-content .content p {
-    font-size: 1.6rem;
-    padding-top: .5rem;
+  /* education media queries starts*/
+  @media screen and (max-width: 600px) {
+    .education .box-container .box {
+      flex-direction: column;
+      width: 100%;
+    }
+    .education .box-container .box .image {
+      width: 100%;
+      height: 25rem;
+    }
+    .education .box-container .box img {
+      width: 100%;
+    }
+    .education .box-container .box .content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      flex-wrap: wrap;
+      flex: 0;
+    }
+    .education .btns {
+      margin-top: 2rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      flex-wrap: wrap;
+    }
   }
-  @media (max-width: 425px) {
-    .education-content .content p {
-         font-size: 1rem;
-     }
-   }
-
-
-  @keyframes slideTop {
-    0%{
-        transform: translateY(100px);
-        opacity: 0;
-    }
-
-    100%{
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-@keyframes slideRight {
-    0%{
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
