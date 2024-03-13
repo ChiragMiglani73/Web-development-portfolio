@@ -10,6 +10,7 @@ body{
 
 
 nav{
+    padding-left: 70px;
     overflow:hidden;
     display:flex;
     justify-content: space-around;
