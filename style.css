@@ -246,6 +246,9 @@ div{
         margin-left: 30px;
         margin-right: 60px;
     }
+    .secondSection{
+        display:none;
+    }
     .secondSection h1 {
         display:none;
     }
