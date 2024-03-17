@@ -193,7 +193,7 @@ div{
     display: block;
 }
 @media only screen and (max-width:800px){
-     .toggle-btn{
+       .toggle-btn{
         display: block;
     }
     nav{
@@ -213,6 +213,7 @@ div{
 
     .left{
         font-size: 1.5rem;
+        float: left;
     }
 
     .leftSection{
@@ -226,6 +227,7 @@ div{
     .buttons{
         display: flex;
         margin-top: 30px;
+        
     }
     .leftSection .btn {
         padding: 10px;
@@ -246,8 +248,14 @@ div{
     }
     .secondSection h1 {
         font-size: 1rem;
+        display:none;
+    }
+    .vertical{
+        display: none;
+    }
+    .secondSection .box{
+        display: none;
     }
     
-       
 
 }
