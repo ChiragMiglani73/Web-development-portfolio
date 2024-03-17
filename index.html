@@ -11,7 +11,12 @@
 </head>
 <body>
   <header>
-    <nav>
+    <div class="toggle-btn" onclick="myFunction();">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+   <nav id="nav" class="show">
       <div class="left"> Chirag's Portfolio</div>
       <div class="right">
         <ul>
@@ -24,10 +29,16 @@
       </div>
     </nav>
   </header>
+  <script type="text/javascript">
+
+    function myFunction(){
+
+      var navbar= document.getElementById('nav');
+      navbar.classList.toggle('show');
+    }
+  </script>
   <main>
-    <div
-    class="col-xxl-11 col-xl-10 col-lg-8 col-md-6"></div>
-    </div>
+   
     <section class="first">
       <div class="leftSection">
         Hi, My Name is <span class="purple">Chirag Miglani</span> 
