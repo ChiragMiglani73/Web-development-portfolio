@@ -60,6 +60,7 @@ nav ul li{
     border-radius: 6px;
     font-size:20px;
     cursor:pointer;
+    
 }
 .btn .anchor{
     color:white;
@@ -196,6 +197,7 @@ div{
         border-radius: 1.5px;
         font-size: 10px;
         cursor: pointer;
+        margin: -2px 2px;
     }
     hr{
         border: 0;
