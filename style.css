@@ -354,6 +354,25 @@ footer {
     padding: 12px 0;
 }
 
+/* Social Media Icons */
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: rgb(209, 56, 143);
+}
+
 /* Responsive Design */
 @media (max-width: 992px) {
     .first {
